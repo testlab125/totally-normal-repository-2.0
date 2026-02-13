@@ -179,6 +179,19 @@ function createFinalButtons() {
         noBtn.style.top = moveY + "px";
     });
 
+    noBtn.onClick = () => {
+
+        yesSize += 20;
+        yesBtn.style.fontSize = yesSize + "px";
+
+        const moveX = (Math.random() - 0.5) * 200;
+        const moveY = (Math.random() - 0.5) * 100;
+
+        noBtn.style.position = "relative";
+        noBtn.style.left = moveX + "px";
+        noBtn.style.top = moveY + "px";
+    };
+
     finalContainer.appendChild(yesBtn);
     finalContainer.appendChild(noBtn);
 
@@ -187,3 +200,4 @@ function createFinalButtons() {
 
 
 showPhrase();
+
