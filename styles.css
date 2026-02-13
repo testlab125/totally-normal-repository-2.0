@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffb6c1;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+#confettiCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+img {
+    width: 250px;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease;
+}
+
+
+.text {
+    font-size: 24px;
+    margin-bottom: 30px;
+    min-height: 100px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.next-btn {
+    background-color: #87cefa;
+    color: white;
+}
+
+.yes-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.no-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Contenedor especial para los botones finales */
+.final-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+
